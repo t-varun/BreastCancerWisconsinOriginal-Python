@@ -20,7 +20,7 @@ accuracy = classifier.score(X_test, y_test)
 print(accuracy)
 
 example = np.array([9,4,5,4,6,1,2,3,7])
-example = example.reshape(1, -1)
+example = example.reshape(len(example), -1)
 prediction = classifier.predict(example)
 
 if prediction[0] == 2:
